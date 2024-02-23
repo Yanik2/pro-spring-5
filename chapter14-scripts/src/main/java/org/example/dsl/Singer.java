@@ -1,12 +1,14 @@
 package org.example.dsl;
 
+import org.joda.time.DateTime;
+
 public class Singer {
     private String firstName;
     private String lastName;
-    private String birthDate;
+    private DateTime birthDate;
     private String ageCategory;
 
-    public Singer(String firstName, String lastName, String birthDate, String ageCategory) {
+    public Singer(String firstName, String lastName, DateTime birthDate, String ageCategory) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.birthDate = birthDate;
@@ -32,11 +34,11 @@ public class Singer {
         this.lastName = lastName;
     }
 
-    public String getBirthDate() {
+    public DateTime getBirthDate() {
         return birthDate;
     }
 
-    public void setBirthDate(String birthDate) {
+    public void setBirthDate(DateTime birthDate) {
         this.birthDate = birthDate;
     }
 
